@@ -63,4 +63,4 @@ artist_id = result["id"]
 songs = get_songs_by_artist(token, artist_id)
 
 for idx, song in enumerate(songs):
-    print(f"{idx + 1}. {song['name']}")
+    print(f"{idx + 1}. {song['name']} (Album: {song['album']['name']})")
