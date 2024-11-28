@@ -64,3 +64,38 @@ songs = get_songs_by_artist(token, artist_id)
 
 for idx, song in enumerate(songs):
     print(f"{idx + 1}. {song['name']} (Album: {song['album']['name']})")
+
+
+'''
+Future improvements:
+- Add error handling
+- Add more features like getting the albums, related ariists, create a playlist with the top songs, etc
+- Add more interactivity to the user with menu options
+
+def main():
+    
+    while True:
+        print("\nMenu:")
+        print("1. Search for Artist")
+        print("2. Fetch Top Tracks")
+        print("3. Fetch Albums")
+        print("4. Find Related Artists")
+        print("5. Create Playlist")
+        print("6. Exit")
+
+        choice = input("Enter your choice: ").strip()
+        if choice == "1":
+            artist_name = get_artist_name()
+            artist = search_for_artist(token, artist_name)
+        elif choice == "2" and artist:
+            songs = get_songs_by_artist(token, artist["id"])
+            for idx, song in enumerate(songs):
+                print(f"{idx + 1}. {song['name']} (Album: {song['album']['name']})")
+        elif choice == "6":
+            break
+        else:
+            print("Invalid choice or no artist selected.")
+
+main()
+
+'''
